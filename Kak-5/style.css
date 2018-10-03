@@ -1,0 +1,162 @@
+body{
+	width: 	320px;
+	margin: auto;
+	font-family: "Roboto", sans-serif;
+}
+
+header{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 2px 0px 0px #e2e4e7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2px;
+}	
+
+.logo-box{
+	display: flex;
+	flex-direction: row;
+	padding: 8px;
+	align-items: center;
+}
+
+.logo-box__logo-text{
+	margin-left: 4px;
+	width: 64px;
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(140, 193, 82);	
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;	
+}
+
+.controls-box{
+	display: flex;
+	flex-direction: row;
+	padding: 8px;
+	align-items: center;
+}
+
+.controls-box__icon-IconMagnifier{
+	margin: 12px;
+}
+
+.controls-box__icon-Menu{
+	margin: 12px;
+	margin-left: 20px;
+}
+
+.content{
+	padding: 8px;
+	background-color: #f0f2f5;
+}
+
+.content-mobile{
+	padding-top: 24px;
+
+}
+
+.slider{
+	background-color: #ff6d55;
+}
+
+.slider-mobile{
+	height: 128px;
+	border-radius: 4px;
+	margin-bottom: 24px;
+}
+
+.plans{
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.plans__plan{
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
+}
+
+.plans__plan--mobile{
+	box-sizing: border-box;
+	height: 144px;
+	width: 	144px;
+	margin-bottom: 16px;
+	padding-top: 16px;
+			position:relative;
+padding-bottom:50px;
+}
+
+.plan-title{
+	vertical-align: text-top;
+	line-height: 57%;
+	font-size: 24px;
+	color: 	#434a54;
+	margin-bottom: 12px;
+	padding: 0 16px;
+
+}
+
+.plan-price{
+	font-size: 16px;
+	margin: 4px 0;
+	padding: 0 16px;
+}
+
+.plan-description{
+	margin: 8px 0;
+	font-size: 12px;
+	color: #aab2bd;
+	padding: 0 16px;	
+}
+
+
+.plan-button{
+	position:absolute;
+	bottom:0;
+
+	background-color: #aab2bd;
+	color: #ffffff;
+ 	font-size: 14px;
+ 	line-height: 32px;
+ 	text-align: center;		
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+	border-radius: 	4px;
+
+}
+
+.plan-button--mobile{
+	width: 100%;
+
+}
+
+.plans__plan--starter{
+	color: #fc9d51;	
+}
+
+.plans__plan--basic{
+	color: #a0d468;	
+}
+
+.plans__plan--pro{
+	color: #55c1e7;	
+}
+
+.plans__plan--ultra{
+	color: #ff5555;	
+}
+
+
+
+
+
+
+
+
+
+
