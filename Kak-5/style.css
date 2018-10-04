@@ -154,13 +154,13 @@ header{
 }
 
 .news{
-
   	display: flex;
 }
 
 .news--mobile{
 	flex-direction: column;
-	margin-top: 56px;
+	margin-top: 32px;
+
 }
 
 .news__block{
@@ -177,7 +177,7 @@ header{
 .news-header{
 	display: inline-block;
 	vertical-align: top;
-
+	margin-top: -32px; 
 }
 .news-info{
 	display: inline-block;
@@ -228,7 +228,7 @@ header{
 .news-content__news-title{
 	font-size: 18px;
 	color: 	#434a54;
-	margin:  16px 0;
+	margin:  12px 0;
 	text-align: center;
 }
 
