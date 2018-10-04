@@ -22,7 +22,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 16px;
   height: 16px;
 }
-.icon-iconMagnifier {
+.controls-box__icon--magnifier{
   background-image: url(sprite.png);
   background-position: -48px 0px;
   width: 24px;
@@ -34,13 +34,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 16px;
   height: 14px;
 }
-.icon-logo {
+.logo-box__icon-logo {
   background-image: url(sprite.png);
   background-position: 0px 0px;
   width: 48px;
   height: 48px;
 }
-.icon-menu {
+.controls-box__icon--menu {
   background-image: url(sprite.png);
   background-position: -48px -24px;
   width: 24px;

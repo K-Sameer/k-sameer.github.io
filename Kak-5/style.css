@@ -18,6 +18,7 @@ header{
 	flex-direction: row;
 	padding: 8px;
 	align-items: center;
+	text-decoration: none;
 }
 
 .logo-box__logo-text{
@@ -35,17 +36,23 @@ header{
 .controls-box{
 	display: flex;
 	flex-direction: row;
-	padding: 8px;
-	align-items: center;
+	align-items: stretch;
+	text-decoration: none;
+	list-style-type: none;	
+	margin: 0;
+	padding-right: 8px;
 }
 
-.controls-box__icon-IconMagnifier{
-	margin: 12px;
+.controls-box__item{
+	margin-left: 8px;
+	padding: 12px;
 }
-
-.controls-box__icon-Menu{
-	margin: 12px;
-	margin-left: 20px;
+.controls-box__icon{
+	border: none;
+    font-size: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .content{
@@ -58,43 +65,45 @@ header{
 
 }
 
-.slider{
+.content__slider{
 	background-color: #ff6d55;
 }
 
-.slider-mobile{
+.content__slider--mobile{
 	height: 128px;
 	border-radius: 4px;
 	margin-bottom: 24px;
 }
 
-.plans{
+.content__plans-list{
 	display: flex;
+	padding: 0;
 }
 
-.plans--mobile{
+.content__plans-list--mobile{
 	flex-wrap: wrap;
 	justify-content: space-between;	
+	margin-bottom: 40px;
 }
 
-.plans__plan{
+.content__plans-list-item{
+	display: flex;
+	flex-direction: column;
 	background-color: #ffffff;
 	border-radius: 4px;
 	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
 }
 
-.plans__plan--mobile{
+.content__plans-list-item--mobile{
 	box-sizing: border-box;
 	height: 144px;
 	width: 	144px;
 	margin-bottom: 16px;
 	padding-top: 16px;
 
-	position:relative;
-	padding-bottom:50px;
 }
 
-.plan-title{
+.plan-card__title{
 	vertical-align: text-top;
 	line-height: 57%;
 	font-size: 24px;
@@ -103,13 +112,13 @@ header{
 	padding: 0 16px;
 }
 
-.plan-price{
+.plan-card__price{
 	font-size: 16px;
 	margin: 4px 0;
 	padding: 0 16px;
 }
 
-.plan-description{
+.plan-card__description{
 	margin: 8px 0;
 	font-size: 12px;
 	color: #aab2bd;
@@ -117,9 +126,10 @@ header{
 }
 
 
-.plan-button{
-	position:absolute;
-	bottom:0;
+.plan-card__button{
+	
+	width: 100%;
+	margin: auto;
 
 	background-color: #aab2bd;
 	color: #ffffff;
@@ -132,65 +142,67 @@ header{
 
 }
 
-.plan-button--mobile{
+.plan-card__button--mobile{
 	width: 100%;
 
 }
 
-.plans__plan--starter{
+.content__plans-list-item--starter{
 	color: #fc9d51;	
 }
 
-.plans__plan--basic{
+.content__plans-list-item--basic{
 	color: #a0d468;	
 }
 
-.plans__plan--pro{
+.content__plans-list-item--pro{
 	color: #55c1e7;	
 }
 
-.plans__plan--ultra{
+.content__plans-list-item--ultra{
 	color: #ff5555;	
 }
 
-.news{
+.content__news-list{
   	display: flex;
 }
 
-.news--mobile{
+.content__news-list--mobile{
 	flex-direction: column;
 	margin-top: 32px;
-
+	padding: 0;
 }
 
-.news__block{
+.content__news-list-item{
 	background-color: #ffffff;
 	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
 	border-radius: 4px;
+	list-style-type: none;
 }
 
-.news__block--mobile{
+.content__news-list-item--mobile{
 	height: 176px;
 	margin-bottom: 56px;
 }
 
-.news-header{
-	display: inline-block;
-	vertical-align: top;
+.news-card__header{
+	height: 80px;
 	margin-top: -32px; 
 }
-.news-info{
+.news-card__info{
 	display: inline-block;
+	vertical-align: bottom;
+	padding-bottom: 8px;
 }
 
-.news-image{
+.news-card__image{
 	border-radius: 40px;
 	width: 80px;
 	height: 80px;
 	margin-left: 112px;
 }
 
-.news-time{
+.news-card__time{
 	display: inline-block;
   	font-size: 12px;
   	color: rgba(170, 178, 189, 0.6);
@@ -198,14 +210,14 @@ header{
   	text-align: left;
 }
 
-.news-time::before{
+.news-card__time::before{
 	content: url(img/IconClock.png);
   	width: 16px;
   	height: 16px;
   	margin-right: 4px;
 }
 
-.news-comments{
+.news-card__comments{
 	display: inline-block;
   	font-size: 12px;
   	color: rgba(170, 178, 189, 0.6);
@@ -214,25 +226,25 @@ header{
   	margin-right: 8px;
 }
 
-.news-comments::before{
+.news-card__comments::before{
   	content: url(img/IconMessage.png);
   	width: 16px;
   	height: 16px;
   	margin-right: 4px;
 }
 
-.news-content{
+.news-card__news-content{
 	display: flex;
 	flex-direction: column;
 }
-.news-content__news-title{
+.news-card__title{
 	font-size: 18px;
 	color: 	#434a54;
-	margin:  12px 0;
+	margin:  16px 0;
 	text-align: center;
 }
 
-.news-content__news-text{
+.news-card__text{
 	margin: 0 16px 16px 16px;
   	font-size: 14px;
   	color: rgb(170, 178, 189);
@@ -253,6 +265,9 @@ footer{
   	text-align: left;
 }
 
+footer>a{
+	padding-left: 2px;
+}
 footer>a:visited{
   color: inherit;
 }
