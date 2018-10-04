@@ -70,7 +70,9 @@ header{
 
 .plans{
 	display: flex;
+}
 
+.plans--mobile{
 	flex-wrap: wrap;
 	justify-content: space-between;	
 }
@@ -87,8 +89,9 @@ header{
 	width: 	144px;
 	margin-bottom: 16px;
 	padding-top: 16px;
-			position:relative;
-padding-bottom:50px;
+
+	position:relative;
+	padding-bottom:50px;
 }
 
 .plan-title{
@@ -98,7 +101,6 @@ padding-bottom:50px;
 	color: 	#434a54;
 	margin-bottom: 12px;
 	padding: 0 16px;
-
 }
 
 .plan-price{
@@ -151,12 +153,107 @@ padding-bottom:50px;
 	color: #ff5555;	
 }
 
+.news{
 
+  	display: flex;
+}
 
+.news--mobile{
+	flex-direction: column;
+	margin-top: 56px;
+}
 
+.news__block{
+	background-color: #ffffff;
+	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
+	border-radius: 4px;
+}
 
+.news__block--mobile{
+	height: 176px;
+	margin-bottom: 56px;
+}
 
+.news-header{
+	display: inline-block;
+	vertical-align: top;
 
+}
+.news-info{
+	display: inline-block;
+}
 
+.news-image{
+	border-radius: 40px;
+	width: 80px;
+	height: 80px;
+	margin-left: 112px;
+}
+
+.news-time{
+	display: inline-block;
+  	font-size: 12px;
+  	color: rgba(170, 178, 189, 0.6);
+  	line-height: 1.2;
+  	text-align: left;
+}
+
+.news-time::before{
+	content: url(img/IconClock.png);
+  	width: 16px;
+  	height: 16px;
+  	margin-right: 4px;
+}
+
+.news-comments{
+	display: inline-block;
+  	font-size: 12px;
+  	color: rgba(170, 178, 189, 0.6);
+  	line-height: 1.2;
+  	text-align: left;
+  	margin-right: 8px;
+}
+
+.news-comments::before{
+  	content: url(img/IconMessage.png);
+  	width: 16px;
+  	height: 16px;
+  	margin-right: 4px;
+}
+
+.news-content{
+	display: flex;
+	flex-direction: column;
+}
+.news-content__news-title{
+	font-size: 18px;
+	color: 	#434a54;
+	margin:  16px 0;
+	text-align: center;
+}
+
+.news-content__news-text{
+	margin: 0 16px 16px 16px;
+  	font-size: 14px;
+  	color: rgb(170, 178, 189);
+  	line-height: 1.429;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 16px;
+	vertical-align: center;
+	background-color: #e6e9ed;
+  	height: 64px;
+  	font-size: 14px;
+  	color: rgb(67, 74, 84);
+  	line-height: 1.2;
+  	text-align: left;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 
