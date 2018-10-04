@@ -242,6 +242,7 @@ header{
 	color: 	#434a54;
 	margin:  16px 0;
 	text-align: center;
+	font-weight: normal;
 }
 
 .news-card__text{
