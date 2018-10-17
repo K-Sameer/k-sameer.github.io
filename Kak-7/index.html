@@ -5,31 +5,30 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
 	<title>Kak-7</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="sprite.css" type="text/css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body class="wrapper">
 		<header class="site-header">
 
-			<a href="index.html" class="site-header__logo">
-				<div class="site-header__logo-box">
-					<img width="48" height="48" class="logo-box__pic" src="images/logo.jpg" alt="">
-					<div class="logo-box__logo-text">
-						<h2 class="logo-text__title">Мерри Поппинс</h2>
-						<p class="logo-text__desc">Лучшие няни в мире</p>
+			<a href="index.html">
+				<div class="site-header__logo-box logo-box">
+					<div class="logo-box__text">
+						<h2 class="logo-box__title">Мерри Поппинс</h2>
+						<p class="logo-box__desc">Лучшие няни в мире</p>
 					</div>
 				</div>
 			</a>
 			
-			<ul class="site-header__menu">
-				<li class="menu__item">Главная</li>
-				<li class="menu__item">Услуги</li>
-				<li class="menu__item">Рекомендации</li>
-				<li class="menu__item">Контакты</li>
+			<ul class="site-header__menu menu">
+				<li class="menu__item"><a href="index.html">Главная</a></li>
+				<li class="menu__item"><a href="index.html">Услуги</a></li>
+				<li class="menu__item"><a href="index.html">Рекомендации</a></li>
+				<li class="menu__item"><a href="index.html">Контакты</a></li>
 			</ul>
 
-			<ul class="site-header__controls-box">
-				<li class="controls-box__item controls-box__search">
+			<ul class="site-header__controls-box controls-box">
+				<li class="controls-box__item ">
 				<input id="search" type="text" class="controls-box__search" placeholder="Введите запрос">
 				</li>
 				<li class="controls-box__item">
@@ -51,11 +50,11 @@
 				<!--<div class="content__slider">Пустой, так как предпологается слайдер</div>-->
 
 				<ul class="content__plans-list">
-					<li class="content__plans-list-item content__plans-list-item--starter">	
+					<li class="content__plans-list-item plans-list-item content__plans-list-item--starter">	
 						<article class="plan-card">
-							<span class="plan-card__title">Starter</span>
+							<h2 class="plan-card__title">Starter</h2>
 							<p class="plan-card__price">$19/per month</p>
-							<ul class="plan-card__about-list">
+							<ul class="plan-card__about-list about-list">
 								<li class="about-list__item">5 users</li>
 								<li class="about-list__item">10 projects</li>
 								<li class="about-list__item">10GB amount of space!</li>
@@ -64,18 +63,18 @@
 							<p class="plan-card__description">For individuals	</p>
 						</article>
 						
-						<button  class="plan-card__button">
-							<a href="index.html" class="plan-card__button">
+						<button  class="plans-list-item__button">
+							<!--<a href="index.html" class="plans-list-item__button">-->
 							Choose Plan
-							</a>
+							<!--</a>-->
 						</button>
 					</li>
 
-					<li class="content__plans-list-item content__plans-list-item--basic">	
+					<li class="content__plans-list-item plans-list-item content__plans-list-item--basic">	
 						<article class="plan-card">
-							<span class="plan-card__title">Basic</span>
+							<h2 class="plan-card__title">Basic</h2>
 							<p class="plan-card__price">$29/per month</p>
-							<ul class="plan-card__about-list">
+							<ul class="plan-card__about-list about-list">
 								<li class="about-list__item">10 users</li>
 								<li class="about-list__item">50 projects</li>
 								<li class="about-list__item">50GB amount of space!</li>
@@ -83,18 +82,18 @@
 							</ul>	
 							<p class="plan-card__description">For blogs and small business websites</p>
 						</article>
-						<button  class="plan-card__button">
-						<a href="index.html" class="plan-card__button">
+						<button  class="plans-list-item__button">
+							<!--<a href="index.html" class="plans-list-item__button">-->
 							Choose Plan
-						</a>
+							<!--</a>-->
 						</button>
 					</li>
 
-					<li class="content__plans-list-item content__plans-list-item--pro">	
+					<li class="content__plans-list-item plans-list-item content__plans-list-item--pro">	
 						<article class="plan-card">
-							<span class="plan-card__title">Pro</span>
+							<h2 class="plan-card__title">Pro</h2>
 							<p class="plan-card__price">$49/per month</p>
-							<ul class="plan-card__about-list">
+							<ul class="plan-card__about-list about-list">
 								<li class="about-list__item">100 users</li>
 								<li class="about-list__item">Unlimited projects</li>
 								<li class="about-list__item">1TB amount of space!</li>
@@ -102,18 +101,18 @@
 							</ul>	
 							<p class="plan-card__description">For consultans and corporate teams</p>
 						</article>
-						<button  class="plan-card__button">
-						<a href="index.html" class="plan-card__button">
+						<button  class="plans-list-item__button">
+							<!--<a href="index.html" class="plans-list-item__button">-->
 							Choose Plan
-						</a>
+							<!--</a>-->
 						</button>
 					</li>
 
-					<li class="content__plans-list-item content__plans-list-item--ultra">	
+					<li class="content__plans-list-item plans-list-item content__plans-list-item--ultra " >	
 						<article class="plan-card">
-							<span class="plan-card__title">Ultra</span>
+							<h2 class="plan-card__title">Ultra</h2>
 							<p class="plan-card__price">$99/per month</p>
-							<ul class="plan-card__about-list">
+							<ul class="plan-card__about-list about-list">
 								<li class="about-list__item">Unlimited users</li>
 								<li class="about-list__item">Unlimited projects</li>
 								<li class="about-list__item">Unlimited amount of space!</li>
@@ -121,10 +120,10 @@
 							</ul>	
 							<p class="plan-card__description">For large enterprises</p>
 						</article>
-						<button class="plan-card__button">
-						<a href="index.html" class="plan-card__button">
+						<button class="plans-list-item__button">
+							<!--<a href="index.html" class="plans-list-item__button">-->
 							Choose Plan
-						</a>
+							<!--</a>-->
 						</button>
 					</li>
 				</ul>
@@ -132,66 +131,75 @@
 				<ul class="content__news-list">
 					<li class="content__news-list-item ">
 					<a href="index.html">
-						<article class="news-card">
+						<article class="news-card news-card__news-content">
 							<img src="img/news-image-1.png" width="80" height="80" alt="Фото статьи" class="news-card__pic">
-							<div class="news-card__news-content">
+
 								<div class="news-card__info">
 									<div class="news-card__time">3h ago</div>
 									<div class="news-card__comments">23</div>
 								</div>
-								<section class="news-card__news-content">
 									<h2 class="news-card__title">Kenya Gold Coffee</h2>
 									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-								</section>
 								<div class="news-card__info news-card__info--bottom">
 									<div class="news-card__time">3h ago</div>
 									<div class="news-card__comments">23</div>
 								</div>
-							</div>
+
 						</article>
 					</a>	
 					</li>
 
 					<li class="content__news-list-item ">
-					<a href="index.html">	
+					<a href="index.html">
 						<article class="news-card">
 							<img src="img/news-image-2.png" width="80" height="80" alt="Фото статьи" class="news-card__pic">
-							<div class="news-card__info">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>
-							<section class="news-card__news-content">
-								<h2 class="news-card__title">Kenya Gold Coffee</h2>
-								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-							</section>
-							<div class="news-card__info news-card__info--bottom">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>							
+
+								<div class="news-card__info">
+									<div class="news-card__time">3h ago</div>
+									<div class="news-card__comments">23</div>
+								</div>
+									<h2 class="news-card__title">Kenya Gold Coffee</h2>
+									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+								<div class="news-card__info news-card__info--bottom">
+									<div class="news-card__time">3h ago</div>
+									<div class="news-card__comments">23</div>
+								</div>
+
 						</article>
-					</a>
+					</a>	
 					</li>
 
-					<li class="content__news-list-item ">	
+					<li class="content__news-list-item ">
 					<a href="index.html">
 						<article class="news-card">
 							<img src="img/news-image-3.png" width="80" height="80" alt="Фото статьи" class="news-card__pic">
-							<div class="news-card__info">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>
-							<section class="news-card__news-content">
-								<h2 class="news-card__title">Kenya Gold Coffee</h2>
-								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-							</section>
-							<div class="news-card__info news-card__info--bottom">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>							
+
+								<div class="news-card__info">
+									<div class="news-card__time">3h ago</div>
+									<div class="news-card__comments">23</div>
+								</div>
+									<h2 class="news-card__title">Kenya Gold Coffee</h2>
+									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+								<div class="news-card__info news-card__info--bottom">
+									<div class="news-card__time">3h ago</div>
+									<div class="news-card__comments">23</div>
+								</div>
+
 						</article>
-					</a>
+					</a>	
 					</li>
-				</ul>			
+				</ul>
+
+				<div class="content__mailing mailing">
+					<section class="mailing__text">
+						<h2>Подпишитесь на рассылку</h2>
+						<p>Раз в месяц присылаем подборку лучших статей из нашего блога. Без спама</p>
+					</section>
+					<div class="mailing__acceptance">
+						<input id="e-mail" type="email" class="mailing__email-input" placeholder="Введите свою почту">
+						<button class="mailing__button">Подписаться</button>
+					</div>
+				</div>			
 		</main>	
 		<footer><span>Учебный проект</span> <a href="https://jedicss.com/"> JediCSS</a></footer>
 	</body>
