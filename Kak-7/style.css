@@ -743,6 +743,7 @@ footer>a:visited{
 .news-card__info--bottom{
 	display: flex;
     justify-content: flex-start;
+    margin-left: -4px;
 }
 
 .content__mailing{
