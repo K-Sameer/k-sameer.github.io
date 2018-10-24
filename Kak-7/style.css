@@ -720,6 +720,8 @@ button:focus {
 
 .content__slider::before{
 	margin-bottom: 48px; 
+	padding: 0;
+	height: 320px; /* Пока так. Высота в макете не соответствует правилу увеличения.*/
 }
 
 .content__plans-list{
