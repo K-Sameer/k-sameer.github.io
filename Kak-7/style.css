@@ -203,10 +203,12 @@ button:focus {
     content: '';
     display: block;
     width: 100%;
-    height: 128px;
     border: none;
 	border-radius: 4px;
     margin-bottom: 24px;
+    padding-top: 42.38%; /*для пропорционального увеличения*/
+	height: 0;
+	overflow: hidden;
 }
 
 .content__plans-list{
@@ -228,12 +230,14 @@ button:focus {
   	margin-bottom: 16px;
   	list-style-type: none;
 	background-color: #fff;
+	 border-top: 4px solid transparent;
   	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
   	border-radius: 4px;
 }
 
 .content__plans-list-item:hover{
-	box-shadow: inset -1px 12px 0px -8px, 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
+
+	border-top-color: var(--plans-list-item-color);
 }
 
 .plan-card{
@@ -255,6 +259,7 @@ button:focus {
 }
 
 .plan-card__price{
+	color: var(--plans-list-item-color);
 	font-size: 16px;
 	margin: 0 0 4px 0;
 }
@@ -270,19 +275,19 @@ button:focus {
 	padding: 0;
 }
 
-.about-list__item{
+.about-list__item{	
 	margin: 8px 0;
 	font-size: 12px;	
 	color: #656d78;
 	display: none;
 	line-height: 1.35;
-	white-space: nowrap; 
-	overflow: visible; 
+
 }
 
 .plans-list-item__button{
 	border: none;
 	width: 100%;
+	padding: 0 24px;
 	margin-top: auto;
 	background-color: #aab2bd;
 	color: #ffffff;
@@ -297,31 +302,35 @@ button:focus {
 
 }
 
-.plans-list-item__button:hover{
+.content__plans-list-item:hover .plans-list-item__button{
+	background-color: var(--plans-list-item-color);
+}
+
+.content__plans-list-item--starter{
+	--plans-list-item-color: #fc9d51;	
+}
+
+.content__plans-list-item--basic{
+	--plans-list-item-color: #a0d468;	
+}
+
+.content__plans-list-item--pro{
+	--plans-list-item-color: #55c1e7;	
+}
+
+.content__plans-list-item--ultra{
+	--plans-list-item-color: #ff5555;	
+}
+
+.content__plans-list-item .plans-list-item__button:hover {
 	background-color: #bd55ff;
 }
-.plans-list-item__button:active{
+.content__plans-list-item .plans-list-item__button:active{
 	background-color: #c774fd;
 }
 
 .plans-list-item__button>a{
 	background-color: inherit;
-}
-
-.content__plans-list-item--starter{
-	color: #fc9d51;	
-}
-
-.content__plans-list-item--basic{
-	color: #a0d468;	
-}
-
-.content__plans-list-item--pro{
-	color: #55c1e7;	
-}
-
-.content__plans-list-item--ultra{
-	color: #ff5555;	
 }
 
 .content__news-list{
@@ -570,7 +579,6 @@ button:focus {
 }
 
 .content__slider::before{
-	height: 288px;
 	margin-bottom: 32px; 
 }
 
@@ -711,7 +719,6 @@ button:focus {
 }
 
 .content__slider::before{
-	height: 320px;
 	margin-bottom: 48px; 
 }
 
@@ -721,7 +728,7 @@ button:focus {
 
 .content__plans-list-item {
   	max-width: calc(25% - 24px);
-	padding: 32px 20px 18px;
+	padding: 28px 20px 18px;
 	margin: 0 12px;
 }
 
