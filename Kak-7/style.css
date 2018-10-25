@@ -126,7 +126,7 @@ button:focus {
 	padding: 0;
 	display: none;
 	position: absolute;
-	top: 66px;
+	top: 100%;
 	left: 0;
 	list-style-type: none;
 	border-radius: 4px;
@@ -315,15 +315,15 @@ button:focus {
 	color: #fc9d51;
 }
 
-.content__plans-list-item--starter .plan-card__price{
+.content__plans-list-item--basic .plan-card__price{
 	color: #a0d468;
 }
 
-.content__plans-list-item--starter .plan-card__price{
+.content__plans-list-item--pro .plan-card__price{
 	color: #55c1e7;
 }
 
-.content__plans-list-item--starter .plan-card__price{
+.content__plans-list-item--ultra .plan-card__price{
 	color: #ff5555;
 }
 
