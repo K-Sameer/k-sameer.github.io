@@ -515,13 +515,13 @@ button:focus {
   	background-color: rgb(255, 255, 255);
   	box-shadow: inset 0px 2px 2px 0px rgba(213, 214, 216, 0.35);
 	margin-bottom: 4px;
+	text-indent: 16px;
 }
 .mailing__email-input::placeholder{
   	font-size: 14px;
   	color: rgb(170, 178, 189);
   	line-height: 2.286;
   	text-align: left;
-  	padding-left: 16px;
 }
 
 .mailing__email-input:focus{
