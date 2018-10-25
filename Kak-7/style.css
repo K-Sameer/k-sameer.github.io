@@ -270,14 +270,22 @@ button:focus {
   	margin-bottom: 16px;
   	list-style-type: none;
 	background-color: #fff;
-	 border-top: 4px solid transparent;
+	border-top: 4px solid transparent;
   	box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
   	border-radius: 4px;
 }
 
-.content__plans-list-item:hover{
-
-	border-top-color: var(--plans-list-item-color);
+ .content__plans-list-item--starter.content__plans-list-item:hover{
+	border-top-color: #fc9d51;
+}
+ .content__plans-list-item--basic.content__plans-list-item:hover{
+	border-top-color: #a0d468;
+}
+ .content__plans-list-item--pro.content__plans-list-item:hover{
+	border-top-color: #55c1e7;
+}
+ .content__plans-list-item--ultra.content__plans-list-item:hover{
+	border-top-color: #ff5555;
 }
 
 .plan-card{
@@ -299,9 +307,24 @@ button:focus {
 }
 
 .plan-card__price{
-	color: var(--plans-list-item-color);
 	font-size: 16px;
 	margin: 0 0 4px 0;
+}
+
+.content__plans-list-item--starter .plan-card__price{
+	color: #fc9d51;
+}
+
+.content__plans-list-item--starter .plan-card__price{
+	color: #a0d468;
+}
+
+.content__plans-list-item--starter .plan-card__price{
+	color: #55c1e7;
+}
+
+.content__plans-list-item--starter .plan-card__price{
+	color: #ff5555;
 }
 
 .plan-card__description{
@@ -342,24 +365,20 @@ button:focus {
 	white-space: nowrap;
 }
 
-.content__plans-list-item:hover .plans-list-item__button{
-	background-color: var(--plans-list-item-color);
+.content__plans-list-item--starter:hover .plans-list-item__button{
+	background-color: #fc9d51;
 }
 
-.content__plans-list-item--starter{
-	--plans-list-item-color: #fc9d51;	
+.content__plans-list-item--basic:hover .plans-list-item__button{
+	background-color: #a0d468;
 }
 
-.content__plans-list-item--basic{
-	--plans-list-item-color: #a0d468;	
+.content__plans-list-item--pro:hover .plans-list-item__button{
+	background-color: #55c1e7;
 }
 
-.content__plans-list-item--pro{
-	--plans-list-item-color: #55c1e7;	
-}
-
-.content__plans-list-item--ultra{
-	--plans-list-item-color: #ff5555;	
+.content__plans-list-item--ultra:hover .plans-list-item__button{
+	background-color: #ff5555;
 }
 
 .content__plans-list-item .plans-list-item__button:hover {
