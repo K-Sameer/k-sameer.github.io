@@ -29,7 +29,7 @@
             			<li class="submenu__element"><a href="index.html">Долгосрочный контракт</a></li>
         			</ul>
 				</li>
-				<li class="menu__item">
+				<li class="menu__item  item">
 					<a href="index.html">Услуги</a>
 			        <ul class="item__submenu submenu">
 			            <li class="submenu__element"><a href="index.html">Сиделка на вечер</a></li>
@@ -37,7 +37,7 @@
             			<li class="submenu__element"><a href="index.html">Долгосрочный контракт</a></li>
         			</ul>				
 				</li>
-				<li class="menu__item">
+				<li class="menu__item  item">
 					<a href="index.html">Рекомендации</a>
 			        <ul class="item__submenu submenu">
 			            <li class="submenu__element"><a href="index.html">Сиделка на вечер</a></li>
@@ -69,9 +69,18 @@
 		</header>
 		<main class="content">
 
-				<a href="index.html" class="content__slider"></a>
-
-				<!--<div class="content__slider">Пустой, так как предпологается слайдер</div>-->
+				<div class="content__slider slider">
+					<ul class="slider__list">
+						<li class="slider__list-item slider__list-item--visited">Slide 1</li>
+						<li class="slider__list-item">Slide 2</li>
+						<li class="slider__list-item">Slide 3</li>
+					</ul>
+					<ul class="slider__switch">
+						<li class="slider__switch-item"><button class="slider__switcher slider__switcher--active">1</button></li>
+						<li class="slider__switch-item"><button class="slider__switcher">2</button></li>
+						<li class="slider__switch-item"><button class="slider__switcher">3</button></li>
+					</ul>
+				</div>
 
 				<ul class="content__plans-list">
 					<li class="content__plans-list-item plans-list-item content__plans-list-item--starter">	
@@ -79,10 +88,10 @@
 							<h2 class="plan-card__title">Starter</h2>
 							<p class="plan-card__price">$19/per month</p>
 							<ul class="plan-card__about-list about-list">
-								<li class="about-list__item">5 users</li>
-								<li class="about-list__item">10 projects</li>
-								<li class="about-list__item">10GB amount of space!</li>
-								<li class="about-list__item">5 e-mail accounts</li>
+								<li class="plan-card__about-list-item">5 users</li>
+								<li class="plan-card__about-list-item">10 projects</li>
+								<li class="plan-card__about-list-item">10GB amount of space!</li>
+								<li class="plan-card__about-list-item">5 e-mail accounts</li>
 							</ul>	
 							<p class="plan-card__description">For individuals	</p>
 						</article>
@@ -99,10 +108,10 @@
 							<h2 class="plan-card__title">Basic</h2>
 							<p class="plan-card__price">$29/per month</p>
 							<ul class="plan-card__about-list about-list">
-								<li class="about-list__item">10 users</li>
-								<li class="about-list__item">50 projects</li>
-								<li class="about-list__item">50GB amount of space!</li>
-								<li class="about-list__item">10 e-mail accounts</li>
+								<li class="plan-card__about-list-item">10 users</li>
+								<li class="plan-card__about-list-item">50 projects</li>
+								<li class="plan-card__about-list-item">50GB amount of space!</li>
+								<li class="plan-card__about-list-item">10 e-mail accounts</li>
 							</ul>	
 							<p class="plan-card__description">For blogs and small business websites</p>
 						</article>
@@ -118,10 +127,10 @@
 							<h2 class="plan-card__title">Pro</h2>
 							<p class="plan-card__price">$49/per month</p>
 							<ul class="plan-card__about-list about-list">
-								<li class="about-list__item">100 users</li>
-								<li class="about-list__item">Unlimited projects</li>
-								<li class="about-list__item">1TB amount of space!</li>
-								<li class="about-list__item">100 e-mail accounts</li>
+								<li class="plan-card__about-list-item">100 users</li>
+								<li class="plan-card__about-list-item">Unlimited projects</li>
+								<li class="plan-card__about-list-item">1TB amount of space!</li>
+								<li class="plan-card__about-list-item">100 e-mail accounts</li>
 							</ul>	
 							<p class="plan-card__description">For consultans and corporate teams</p>
 						</article>
@@ -137,10 +146,10 @@
 							<h2 class="plan-card__title">Ultra</h2>
 							<p class="plan-card__price">$99/per month</p>
 							<ul class="plan-card__about-list about-list">
-								<li class="about-list__item">Unlimited users</li>
-								<li class="about-list__item">Unlimited projects</li>
-								<li class="about-list__item">Unlimited amount of space!</li>
-								<li class="about-list__item">Unlimited e-mail accounts</li>
+								<li class="plan-card__about-list-item">Unlimited users</li>
+								<li class="plan-card__about-list-item">Unlimited projects</li>
+								<li class="plan-card__about-list-item">Unlimited amount of space!</li>
+								<li class="plan-card__about-list-item">Unlimited e-mail accounts</li>
 							</ul>	
 							<p class="plan-card__description">For large enterprises</p>
 						</article>
@@ -226,5 +235,7 @@
 				</form>			
 		</main>	
 		<footer class="site-footer"><span>Учебный проект</span> <a href="https://jedicss.com/"> JediCSS</a></footer>
+
+	<script src="script.js"></script>
 	</body>
 </html>
