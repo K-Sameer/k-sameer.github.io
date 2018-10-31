@@ -96,21 +96,19 @@ button:focus {
 	display: flex;
   	font-size: 14px;
   	text-transform: uppercase;
-  	line-height: 1.2;
   	text-align: center;
-  	padding: 20px 12px 12px 12px;
 	align-items: center;
 	margin: -8px 0;
 	border: none;	
 	border-bottom: 2px solid transparent;
 	position: relative;
+
 }
 .menu__item>a{
+	padding: 26px 12px 20px 12px;
   	color: #434a54;
-}
-.menu__item:active{
-	color: 	#a0d468;
   	border-bottom-color: #a0d468;
+  	z-index: 1;
 }
 .menu__item--active{
   	border-bottom-color: #a0d468;
@@ -126,7 +124,7 @@ button:focus {
  	content: '';
 	position: absolute;
 	width: 100%;
-	padding-top: 100%;
+	padding-top: 120%;
 }
 
 .item__submenu{
@@ -165,17 +163,18 @@ button:focus {
 	text-decoration: none;
 	min-width: 240px;
 	width: 100%;
-	padding: 16px 48px 16px 24px; 
 	font-size: 14px;
 	text-transform: initial;
 	float: left;
 	background-color: #a0d468;
 }
 
-.submenu__element > a{
+.submenu__element-link{
+	padding: 16px 48px 16px 24px; 
 	float: left;
 	color: #fff;
 	background-color: inherit;
+	border-radius: 4px;
 }
 
 .submenu__element:hover, .submenu__element:focus{
@@ -473,6 +472,11 @@ button:focus {
     padding: 0 16px 18px 16px;
 }
 
+.news-list-item__pic{
+	display: flex;
+	justify-content: center;
+}
+
 .news-card__pic{
 	align-self: center;	
 	background-color: #f0f2f5;
@@ -719,8 +723,7 @@ button:focus {
 	}
 
 	.content{
-		padding: 16px;
-		padding-top: 28px;
+		padding: 28px 16px 36px 16px;
 	}
 
 	.content__slider{
@@ -766,7 +769,7 @@ button:focus {
 	}
 
 	.news-card__title{
-		margin-top: 40px; 
+		margin-top: 46px; 
 	}
 
 	.news-card__text{
@@ -841,7 +844,6 @@ button:focus {
 
 	.controls-box__search{
 		display: flex;
-		text-align: right;
 		margin-right: -8px;	
 	}
 
