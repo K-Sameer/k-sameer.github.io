@@ -7,6 +7,13 @@ toggleMenuBtn.addEventListener('click', function(){
 	navMenu.classList.toggle("visible");
 });
 
+//поиск
+var toggleSearch = document.querySelector(".controls-box__icon--magnifier");
+var search = document.querySelector(".controls-box__search");
+
+toggleSearch.addEventListener('click', function(){
+  search.classList.toggle("visible");
+});
 // слайдер
 var sliderSwitch = document.querySelectorAll(".slider__switch");
 
@@ -29,3 +36,4 @@ for (var i = 0; i < sliderSwitcher.length; i++) {
 
   })(i))
 }
+
