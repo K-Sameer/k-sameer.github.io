@@ -10,7 +10,6 @@
 </head>
 <body class="wrapper">
 		<header class="site-header">
-
 			<a href="index.html">
 				<div class="site-header__logo-box logo-box">
 					<div class="logo-box__text">
@@ -57,19 +56,19 @@
 				</li>
 				<li class="controls-box__item">
 					<button class="controls-box__icon controls-box__icon--magnifier">
-						"Поиск"
+						<span class="visually-hidden">Открыть поиск</span>
 					</button>
 				</li>
 				<li  class="controls-box__item">	
 					<button class="controls-box__icon controls-box__icon--menu">
-						"Меню"
+						<span class="visually-hidden">Открыть меню</span>
 					</button>
 				</li>
 			</ul>
 		</header>
 		<main class="content">
-
-				<div class="content__slider slider">
+			<h1 class="visually-hidden">Сайт для поиска нянь на любой период</h1>
+			<div class="content__slider slider">
 					<ul class="slider__list">
 						<li class="slider__list-item slider__list-item--visited">Slide 1</li>
 						<li class="slider__list-item">Slide 2</li>
@@ -80,152 +79,158 @@
 						<li class="slider__switch-item"><button class="slider__switcher">2</button></li>
 						<li class="slider__switch-item"><button class="slider__switcher">3</button></li>
 					</ul>
-				</div>
+			</div>
 
-				<ul class="content__plans-list">
-					<li class="content__plans-list-item plans-list-item content__plans-list-item--starter">	
+			<h2 class="visually-hidden">Тарифы услуг</h2>
+			<ul class="content__plans-list">
+				<li class="content__plans-list-item plans-list-item content__plans-list-item--starter">	
 						<article class="plan-card">
-							<h2 class="plan-card__title">Starter</h2>
-							<p class="plan-card__price">$19/per month</p>
-							<ul class="plan-card__about-list about-list">
-								<li class="plan-card__about-list-item">5 users</li>
-								<li class="plan-card__about-list-item">10 projects</li>
-								<li class="plan-card__about-list-item">10GB amount of space!</li>
-								<li class="plan-card__about-list-item">5 e-mail accounts</li>
-							</ul>	
-							<p class="plan-card__description">For individuals	</p>
-						</article>
-						
-						<button  class="plans-list-item__button">
-							<!--<a href="index.html" class="plans-list-item__button">-->
-							Choose Plan
-							<!--</a>-->
-						</button>
-					</li>
+						<h3 class="plan-card__title">Starter</h3>
+						<p class="plan-card__price">$19/per month</p>
+						<ul class="plan-card__about-list about-list">
+							<li class="plan-card__about-list-item">5 users</li>
+							<li class="plan-card__about-list-item">10 projects</li>
+							<li class="plan-card__about-list-item">10GB amount of space!</li>
+							<li class="plan-card__about-list-item">5 e-mail accounts</li>
+						</ul>	
+						<p class="plan-card__description">For individuals	</p>
+					</article>
+					
+					<button  class="plans-list-item__button">							<!--<a href="index.html" class="plans-list-item__button">-->
+						Choose Plan
+						<span class="visually-hidden">Выбрать план</span>
+						<!--</a>-->
+					</button>
+				</li>
 
-					<li class="content__plans-list-item plans-list-item content__plans-list-item--basic">	
-						<article class="plan-card">
-							<h2 class="plan-card__title">Basic</h2>
-							<p class="plan-card__price">$29/per month</p>
-							<ul class="plan-card__about-list about-list">
-								<li class="plan-card__about-list-item">10 users</li>
-								<li class="plan-card__about-list-item">50 projects</li>
-								<li class="plan-card__about-list-item">50GB amount of space!</li>
-								<li class="plan-card__about-list-item">10 e-mail accounts</li>
-							</ul>	
-							<p class="plan-card__description">For blogs and small business websites</p>
-						</article>
-						<button  class="plans-list-item__button">
-							<!--<a href="index.html" class="plans-list-item__button">-->
-							Choose Plan
-							<!--</a>-->
-						</button>
-					</li>
+				<li class="content__plans-list-item plans-list-item content__plans-list-item--basic">	
+					<article class="plan-card">
+						<h3 class="plan-card__title">Basic</h3>
+						<p class="plan-card__price">$29/per month</p>
+						<ul class="plan-card__about-list about-list">
+							<li class="plan-card__about-list-item">10 users</li>
+							<li class="plan-card__about-list-item">50 projects</li>
+							<li class="plan-card__about-list-item">50GB amount of space!</li>
+							<li class="plan-card__about-list-item">10 e-mail accounts</li>
+						</ul>	
+						<p class="plan-card__description">For blogs and small business websites</p>
+					</article>
+					<button  class="plans-list-item__button">
+						<!--<a href="index.html" class="plans-list-item__button">-->
+						Choose Plan
+						<span class="visually-hidden">Выбрать план</span>
+						<!--</a>-->
+					</button>
+				</li>
 
-					<li class="content__plans-list-item plans-list-item content__plans-list-item--pro">	
-						<article class="plan-card">
-							<h2 class="plan-card__title">Pro</h2>
-							<p class="plan-card__price">$49/per month</p>
-							<ul class="plan-card__about-list about-list">
-								<li class="plan-card__about-list-item">100 users</li>
-								<li class="plan-card__about-list-item">Unlimited projects</li>
-								<li class="plan-card__about-list-item">1TB amount of space!</li>
-								<li class="plan-card__about-list-item">100 e-mail accounts</li>
-							</ul>	
-							<p class="plan-card__description">For consultans and corporate teams</p>
-						</article>
-						<button  class="plans-list-item__button">
-							<!--<a href="index.html" class="plans-list-item__button">-->
-							Choose Plan
-							<!--</a>-->
-						</button>
-					</li>
+				<li class="content__plans-list-item plans-list-item content__plans-list-item--pro">	
+					<article class="plan-card">
+						<h3 class="plan-card__title">Pro</h3>
+						<p class="plan-card__price">$49/per month</p>
+						<ul class="plan-card__about-list about-list">
+							<li class="plan-card__about-list-item">100 users</li>
+							<li class="plan-card__about-list-item">Unlimited projects</li>
+							<li class="plan-card__about-list-item">1TB amount of space!</li>
+							<li class="plan-card__about-list-item">100 e-mail accounts</li>
+						</ul>	
+						<p class="plan-card__description">For consultans and corporate teams</p>
+					</article>
+					<button  class="plans-list-item__button">
+						<!--<a href="index.html" class="plans-list-item__button">-->
+						Choose Plan
+						<span class="visually-hidden">Выбрать план</span>
+						<!--</a>-->
+					</button>
+				</li>
 
-					<li class="content__plans-list-item plans-list-item content__plans-list-item--ultra " >	
-						<article class="plan-card">
-							<h2 class="plan-card__title">Ultra</h2>
-							<p class="plan-card__price">$99/per month</p>
-							<ul class="plan-card__about-list about-list">
-								<li class="plan-card__about-list-item">Unlimited users</li>
-								<li class="plan-card__about-list-item">Unlimited projects</li>
-								<li class="plan-card__about-list-item">Unlimited amount of space!</li>
-								<li class="plan-card__about-list-item">Unlimited e-mail accounts</li>
-							</ul>	
-							<p class="plan-card__description">For large enterprises</p>
-						</article>
-						<button class="plans-list-item__button">
-							<!--<a href="index.html" class="plans-list-item__button">-->
-							Choose Plan
-							<!--</a>-->
-						</button>
-					</li>
-				</ul>
+				<li class="content__plans-list-item plans-list-item content__plans-list-item--ultra " >	
+					<article class="plan-card">
+						<h3 class="plan-card__title">Ultra</h3>
+						<p class="plan-card__price">$99/per month</p>
+						<ul class="plan-card__about-list about-list">
+							<li class="plan-card__about-list-item">Unlimited users</li>
+							<li class="plan-card__about-list-item">Unlimited projects</li>
+							<li class="plan-card__about-list-item">Unlimited amount of space!</li>
+							<li class="plan-card__about-list-item">Unlimited e-mail accounts</li>
+						</ul>	
+						<p class="plan-card__description">For large enterprises</p>
+					</article>
+					<button class="plans-list-item__button">
+						<!--<a href="index.html" class="plans-list-item__button">-->
+						Choose Plan
+						<span class="visually-hidden">Выбрать план</span>
+						<!--</a>-->
+					</button>
+				</li>
+			</ul>
 
-				<ul class="content__news-list">
-					<li class="content__news-list-item news-list-item">
+			<h2 class="visually-hidden">Новостной блок</h2>
+			<ul class="content__news-list">
+				<li class="content__news-list-item news-list-item">
 					<a href="index.html">
 						<div class="news-list-item__news-pic news-pic">
 							<img src="img/news-image-1.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
 						</div>
 						<article class="news-list-item__news-card news-card">	
-								<div class="news-card__info">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
-									<h2 class="news-card__title">Kenya Gold Coffee</h2>
-									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-								<div class="news-card__info news-card__info--bottom">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
+							<div class="news-card__info">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
+							<h3 class="news-card__title">Kenya Gold Coffee</h3>
+							<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+							<div class="news-card__info news-card__info--bottom">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
 						</article>
 					</a>	
-					</li>
+				</li>
 
-					<li class="content__news-list-item news-list-item">
+				<li class="content__news-list-item news-list-item">
 					<a href="index.html">
 						<div class="news-list-item__news-pic news-pic">
 							<img src="img/news-image-2.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
 						</div>
 						<article class="news-list-item__news-card news-card">	
-								<div class="news-card__info">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
-									<h2 class="news-card__title">Kenya Gold Coffee</h2>
-									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-								<div class="news-card__info news-card__info--bottom">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
+							<div class="news-card__info">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
+								<h3 class="news-card__title">Kenya Gold Coffee</h3>
+								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+							<div class="news-card__info news-card__info--bottom">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
 						</article>
 					</a>	
-					</li>
+				</li>
 
-					<li class="content__news-list-item news-list-item">
+				<li class="content__news-list-item news-list-item">
 					<a href="index.html">
 						<div class="news-list-item__news-pic news-pic">
 							<img src="img/news-image-3.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
 						</div>
 						<article class="news-list-item__news-card news-card">	
-								<div class="news-card__info">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
-									<h2 class="news-card__title">Kenya Gold Coffee</h2>
-									<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-								<div class="news-card__info news-card__info--bottom">
-									<div class="news-card__time">3h ago</div>
-									<div class="news-card__comments">23</div>
-								</div>
+							<div class="news-card__info">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
+								<h3 class="news-card__title">Kenya Gold Coffee</h3>
+								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+							<div class="news-card__info news-card__info--bottom">
+								<div class="news-card__time">3h ago</div>
+								<div class="news-card__comments">23</div>
+							</div>
 						</article>
 					</a>	
-					</li>
+				</li>
 				</ul>
-
+				
+				<h2 class="visually-hidden">Подписка на рассылку</h2>
 				<form class="content__mailing mailing">
 					<section class="mailing__text">
-						<h2>Подпишитесь на рассылку</h2>
+						<h3>Подпишитесь на рассылку</h3>
 						<p>Раз в месяц присылаем подборку лучших статей из нашего блога. Без спама</p>
 					</section>
 					<div class="mailing__acceptance">		
