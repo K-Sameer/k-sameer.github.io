@@ -1,4 +1,18 @@
 "use strict";
+//картинки
+$(document).ready(function() {
+  var elems = $('.news-pic__img');
+  elems.each(function(){
+    var elem = $(this);
+    var width = elem.width();
+    var height = elem.height();
+    if(width < height){
+       elem.addClass('element_vertical');
+    }else if(width > height){
+       elem.addClass('element_horizont');
+    }
+  })
+});
 // меню
 var toggleMenuBtn = document.querySelector(".controls-box__icon--menu");
 var navMenu = document.querySelector(".site-header__menu");

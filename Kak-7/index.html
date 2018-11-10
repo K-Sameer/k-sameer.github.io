@@ -8,6 +8,7 @@
 </head>
 <body class="wrapper">
 		<header class="site-header">
+			<div class="site-header__wrapper">
 			<a href="index.html">
 				<div class="site-header__logo-box logo-box">
 					<div class="logo-box__text">
@@ -63,6 +64,7 @@
 					</button>
 				</li>
 			</ul>
+			</div>
 		</header>
 		<main class="content">
 			<h1 class="visually-hidden">Сайт для поиска нянь на любой период</h1>
@@ -168,19 +170,41 @@
 			<ul class="content__news-list">
 				<li class="content__news-list-item news-list-item">
 					<a href="index.html">
-						<div class="news-list-item__news-pic news-pic">
-							<img src="img/news-image-1.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
-						</div>
 						<article class="news-list-item__news-card news-card">	
+							<div class="news-list-item__news-pic news-pic">
+								<img src="img/news-image-1.png" alt="Фото статьи" class="news-pic__img">
+							</div>
+				
 							<div class="news-card__info">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
 							</div>
 							<h3 class="news-card__title">Kenya Gold Coffee</h3>
 							<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
 							<div class="news-card__info news-card__info--bottom">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
+							</div>
+
+						</article>
+					</a>	
+				</li>
+
+				<li class="content__news-list-item news-list-item">
+					<a href="index.html">
+						<article class="news-list-item__news-card news-card">
+							<div class="news-list-item__news-pic news-pic">
+								<img src="img/news-image-2.png" alt="Фото статьи" class="news-pic__img">
+							</div>	
+							<div class="news-card__info">
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
+							</div>
+								<h3 class="news-card__title">Kenya Gold Coffee</h3>
+								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+							<div class="news-card__info news-card__info--bottom">
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
 							</div>
 						</article>
 					</a>	
@@ -188,39 +212,19 @@
 
 				<li class="content__news-list-item news-list-item">
 					<a href="index.html">
-						<div class="news-list-item__news-pic news-pic">
-							<img src="img/news-image-2.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
-						</div>
 						<article class="news-list-item__news-card news-card">	
+							<div class="news-list-item__news-pic news-pic">
+								<img src="img/news-image-3.png" alt="Фото статьи" class="news-pic__img">
+							</div>
 							<div class="news-card__info">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
 							</div>
 								<h3 class="news-card__title">Kenya Gold Coffee</h3>
 								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
 							<div class="news-card__info news-card__info--bottom">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>
-						</article>
-					</a>	
-				</li>
-
-				<li class="content__news-list-item news-list-item">
-					<a href="index.html">
-						<div class="news-list-item__news-pic news-pic">
-							<img src="img/news-image-3.png" width="80" height="80" alt="Фото статьи" class="news-pic__img">
-						</div>
-						<article class="news-list-item__news-card news-card">	
-							<div class="news-card__info">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
-							</div>
-								<h3 class="news-card__title">Kenya Gold Coffee</h3>
-								<div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
-							<div class="news-card__info news-card__info--bottom">
-								<div class="news-card__time">3h ago</div>
-								<div class="news-card__comments">23</div>
+								<div class="news-card__icon news-card__icon--time">3h ago</div>
+								<div class="news-card__icon news-card__icon--comments">23</div>
 							</div>
 						</article>
 					</a>	
@@ -239,8 +243,8 @@
 					</div>
 				</form>			
 		</main>	
-		<footer class="site-footer"><span>Учебный проект</span> <a href="https://jedicss.com/"> JediCSS</a></footer>
-
+		<footer class="site-footer">Учебный проект <a href="https://jedicss.com/"> JediCSS</a></footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="script.js"></script>
 	</body>
 </html>
